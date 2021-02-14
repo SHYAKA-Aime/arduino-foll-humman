@@ -4,7 +4,7 @@
 // To install the libraries ( first download the AF Motor driver, NewPing and Servo Library zip file //
 // then Go to Skecth >> Include Library >> Add .Zip Library >> Select The downloaded zip file >> Done) //
 // Contact me on instagram for any question(Insta Id : M_ideas_youtube)
-
+// these are codes of robot but it doesnt have practical results becouse of hardware requirements
 
 #include<NewPing.h>
 #include<Servo.h>
@@ -29,7 +29,7 @@ Servo myservo;
 int pos =0;
 
 void setup() {
-  // put your setup code here, to run once:
+ //set up code
   Serial.begin(9600);
 myservo.attach(10);
 {
@@ -50,7 +50,7 @@ pinMode(LEFT, INPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // main code :
 
   delay(50);
  unsigned int distance = sonar.ping_cm();
